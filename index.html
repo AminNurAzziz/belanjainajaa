@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BelanjainAja - Point of Sale untuk UMKM Modern</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body class="font-sans text-dark">
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full z-10">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold text-primary flex items-center">
+            <i class="fas fa-shopping-cart mr-2"></i>
+            <span>BelanjainAja</span>
+          </a>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#beranda" class="font-medium hover:text-primary transition-colors">Beranda</a>
+          <a href="#fitur" class="font-medium hover:text-primary transition-colors">Fitur</a>
+          <a href="#harga" class="font-medium hover:text-primary transition-colors">Harga</a>
+          <a href="#testimoni" class="font-medium hover:text-primary transition-colors">Testimoni</a>
+        </nav>
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="https://wa.me/6282116917371" class="bg-primary hover:bg-primary-dark text-white font-medium py-2 px-4 rounded-lg transition-colors">Daftar Gratis</a>
+        </div>
+        <button class="md:hidden text-dark focus:outline-none" id="mobile-menu-button">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="md:hidden hidden bg-white" id="mobile-menu">
+        <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+          <a href="#beranda" class="font-medium hover:text-primary transition-colors">Beranda</a>
+          <a href="#fitur" class="font-medium hover:text-primary transition-colors">Fitur</a>
+          <a href="#harga" class="font-medium hover:text-primary transition-colors">Harga</a>
+          <a href="#testimoni" class="font-medium hover:text-primary transition-colors">Testimoni</a>
+          <div class="flex flex-col space-y-2 pt-2 border-t">
+            <a href="https://wa.me/6282116917371" class="bg-primary hover:bg-primary-dark text-white font-medium py-2 px-4 rounded-lg transition-colors text-center">Daftar Gratis</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="pt-28 pb-20 bg-gradient-to-br from-blue-50 to-white">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Solusi Point of Sale Modern untuk <span class="text-primary">UMKM Anda</span></h1>
+            <p class="text-lg text-gray-600 mb-8">Kelola bisnis Anda dengan lebih efisien. BelanjainAja membantu UMKM mengelola penjualan, inventaris, dan pelanggan dalam satu platform yang mudah digunakan.</p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <a href="https://wa.me/6282116917371" class="bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-lg transition-colors text-center">Mulai Gratis 14 Hari</a>
+              <a href="https://wa.me/6282116917371" class="border border-primary text-primary hover:bg-primary hover:text-white font-medium py-3 px-6 rounded-lg transition-colors text-center">Jadwalkan Demo</a>
+            </div>
+            <div class="mt-8 flex items-center">
+              <div class="flex -space-x-2">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                <img src="https://randomuser.me/api/portraits/men/54.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+              </div>
+              <p class="ml-4 text-sm text-gray-600">Bergabung dengan <span class="font-semibold">500+ UMKM</span> yang telah menggunakan BelanjainAja</p>
+            </div>
+          </div>
+          <div class="md:w-1/2 md:pl-10">
+            <img src="assets/dashboard1.png" alt="BelanjainAja POS Dashboard" class="rounded-lg shadow-xl w-full">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="fitur" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Fitur Unggulan BelanjainAja</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Solusi lengkap untuk membantu UMKM Anda berkembang dengan sistem point of sale yang modern dan mudah digunakan.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+              <i class="fas fa-cash-register text-2xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Kasir Digital</h3>
+            <p class="text-gray-600">Proses transaksi dengan cepat dan mudah. Mendukung berbagai metode pembayaran termasuk tunai, kartu, dan e-wallet.</p>
+          </div>
+          
+          <!-- Feature 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+              <i class="fas fa-box text-2xl text-secondary"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Manajemen Inventaris</h3>
+            <p class="text-gray-600">Pantau stok barang secara real-time, atur peringatan stok minimum, dan kelola pemesanan barang dengan mudah.</p>
+          </div>
+          
+          <!-- Feature 3 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+              <i class="fas fa-chart-line text-2xl text-purple-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Laporan & Analitik</h3>
+            <p class="text-gray-600">Dapatkan wawasan bisnis dengan laporan penjualan, inventaris, dan keuangan yang komprehensif dan mudah dipahami.</p>
+          </div>
+          
+          <!-- Feature 4 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+              <i class="fas fa-users text-2xl text-red-500"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Manajemen Pelanggan</h3>
+            <p class="text-gray-600">Kelola database pelanggan, program loyalitas, dan riwayat pembelian untuk meningkatkan retensi pelanggan.</p>
+          </div>
+          
+          <!-- Feature 5 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
+              <i class="fas fa-mobile-alt text-2xl text-yellow-500"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Aplikasi Mobile</h3>
+            <p class="text-gray-600">Akses data bisnis Anda dari mana saja dengan aplikasi mobile yang tersedia untuk Android dan iOS.</p>
+          </div>
+          
+          <!-- Feature 6 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+              <i class="fas fa-plug text-2xl text-indigo-500"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Integrasi</h3>
+            <p class="text-gray-600">Integrasikan dengan platform e-commerce, akuntansi, dan aplikasi bisnis lainnya untuk operasi yang lebih efisien.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Bagaimana BelanjainAja Bekerja</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Mulai menggunakan BelanjainAja dalam beberapa langkah sederhana</p>
+        </div>
+        
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+            <img src="assets/dashboard2.png" alt="BelanjainAja Dashboard" class="rounded-lg shadow-xl w-full">
+          </div>
+          
+          <div class="md:w-1/2 md:pl-10">
+            <div class="space-y-8">
+              <!-- Step 1 -->
+              <div class="flex">
+                <div class="flex-shrink-0 mr-4">
+                  <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">1</div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Daftar Akun</h3>
+                  <p class="text-gray-600">Buat akun BelanjainAja Anda dalam hitungan menit. Tidak diperlukan kartu kredit untuk uji coba gratis 14 hari.</p>
+                </div>
+              </div>
+              
+              <!-- Step 2 -->
+              <div class="flex">
+                <div class="flex-shrink-0 mr-4">
+                  <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">2</div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Atur Toko Anda</h3>
+                  <p class="text-gray-600">Tambahkan produk, atur kategori, dan sesuaikan pengaturan sesuai kebutuhan bisnis Anda.</p>
+                </div>
+              </div>
+              
+              <!-- Step 3 -->
+              <div class="flex">
+                <div class="flex-shrink-0 mr-4">
+                  <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">3</div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Mulai Bertransaksi</h3>
+                  <p class="text-gray-600">Proses penjualan dengan mudah menggunakan antarmuka yang intuitif dan ramah pengguna.</p>
+                </div>
+              </div>
+              
+              <!-- Step 4 -->
+              <div class="flex">
+                <div class="flex-shrink-0 mr-4">
+                  <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold">4</div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Analisis & Kembangkan</h3>
+                  <p class="text-gray-600">Gunakan laporan dan analitik untuk memahami performa bisnis dan membuat keputusan yang lebih baik.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="harga" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Paket Harga yang Fleksibel</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Pilih paket yang sesuai dengan kebutuhan bisnis Anda. Semua paket mencakup fitur inti BelanjainAja.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- Basic Plan -->
+          <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+            <div class="p-8">
+              <h3 class="text-xl font-semibold mb-2">Standar</h3>
+              <p class="text-gray-600 mb-6">Untuk UMKM yang baru memulai</p>
+              <div class="flex items-end mb-6">
+                <span class="text-4xl font-bold">Rp 99K</span>
+                <span class="text-gray-500 ml-2">/bulan</span>
+              </div>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>1 Outlet</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>2 Pengguna</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>500 Produk</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Laporan Dasar</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Dukungan Email</span>
+                </li>
+              </ul>
+              <a href="https://wa.me/6282116917371" class="block text-center bg-white border border-primary text-primary hover:bg-primary hover:text-white font-medium py-3 px-6 rounded-lg transition-colors">Pilih Paket</a>
+            </div>
+          </div>
+          
+          <!-- Custom Plan -->
+          <div class="bg-white rounded-xl shadow-lg border-2 border-primary overflow-hidden">
+            <div class="bg-primary text-white py-2 text-center font-medium">
+              <span>DENGAN KUSTOMISASI</span>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-semibold mb-2">Kustom</h3>
+              <p class="text-gray-600 mb-6">Untuk UMKM dengan kebutuhan khusus</p>
+              <div class="flex items-end mb-6">
+                <span class="text-4xl font-bold">Rp 149K</span>
+                <span class="text-gray-500 ml-2">/bulan</span>
+              </div>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>3 Outlet</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>5 Pengguna</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>2000 Produk</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Laporan Lanjutan</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Dukungan Prioritas</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-green-500 mr-2"></i>
+                  <span>Kustomisasi Fitur</span>
+                </li>
+              </ul>
+              <a href="https://wa.me/6282116917371" class="block text-center bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-lg transition-colors">Pilih Paket</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimoni" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Apa Kata Pelanggan Kami</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Dengarkan pengalaman dari UMKM yang telah menggunakan BelanjainAja</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Testimonial" class="w-12 h-12 rounded-full mr-4">
+              <div>
+                <h4 class="font-semibold">Siti Rahayu</h4>
+                <p class="text-gray-500 text-sm">Pemilik Kafe Kekinian</p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-gray-600">"BelanjainAja sangat membantu bisnis kafe saya. Sekarang saya bisa melacak inventaris dan penjualan dengan mudah. Laporan yang disediakan juga sangat membantu untuk menganalisis performa bisnis."</p>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Testimonial" class="w-12 h-12 rounded-full mr-4">
+              <div>
+                <h4 class="font-semibold">Budi Santoso</h4>
+                <p class="text-gray-500 text-sm">Pemilik Toko Elektronik</p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-gray-600">"Sebelum menggunakan BelanjainAja, saya kesulitan mengelola stok barang elektronik. Sekarang semua terorganisir dengan baik dan saya mendapatkan notifikasi saat stok hampir habis. Sangat direkomendasikan!"</p>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Testimonial" class="w-12 h-12 rounded-full mr-4">
+              <div>
+                <h4 class="font-semibold">Dewi Anggraini</h4>
+                <p class="text-gray-500 text-sm">Pemilik Butik Fashion</p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star-half-alt text-yellow-400"></i>
+            </div>
+            <p class="text-gray-600">"Integrasi dengan platform e-commerce sangat membantu bisnis fashion saya. Saya bisa mengelola inventaris offline dan online dalam satu sistem. Tim support juga sangat responsif saat saya membutuhkan bantuan."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Siap Meningkatkan Bisnis Anda?</h2>
+        <p class="text-xl text-white opacity-90 mb-8 max-w-3xl mx-auto">Bergabunglah dengan ribuan UMKM yang telah menggunakan BelanjainAja untuk mengelola bisnis mereka dengan lebih efisien.</p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+          <a href="https://wa.me/6282116917371" class="bg-white text-primary hover:bg-gray-100 font-medium py-3 px-8 rounded-lg transition-colors text-center">Mulai Gratis 14 Hari</a>
+          <a href="https://wa.me/6282116917371" class="border border-white text-white hover:bg-white hover:text-primary font-medium py-3 px-8 rounded-lg transition-colors text-center">Jadwalkan Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Pertanyaan yang Sering Diajukan</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Temukan jawaban untuk pertanyaan umum tentang BelanjainAja</p>
+        </div>
+        
+        <div class="max-w-3xl mx-auto">
+          <!-- FAQ Item 1 -->
+          <div class="mb-6 border-b border-gray-200 pb-6">
+            <h3 class="text-xl font-semibold mb-2">Apakah saya perlu perangkat khusus untuk menggunakan BelanjainAja?</h3>
+            <p class="text-gray-600">Tidak, BelanjainAja dapat diakses melalui browser web di komputer, tablet, atau smartphone. Kami juga menyediakan aplikasi mobile untuk Android dan iOS untuk pengalaman yang lebih baik.</p>
+          </div>
+          
+          <!-- FAQ Item 2 -->
+          <div class="mb-6 border-b border-gray-200 pb-6">
+            <h3 class="text-xl font-semibold mb-2">Bagaimana jika saya membutuhkan bantuan dalam menggunakan BelanjainAja?</h3>
+            <p class="text-gray-600">Kami menyediakan dukungan pelanggan melalui email, live chat, dan telepon. Kami juga memiliki pusat bantuan dengan tutorial dan panduan penggunaan yang komprehensif.</p>
+          </div>
+          
+          <!-- FAQ Item 3 -->
+          <div class="mb-6 border-b border-gray-200 pb-6">
+            <h3 class="text-xl font-semibold mb-2">Apakah data saya aman dengan BelanjainAja?</h3>
+            <p class="text-gray-600">Ya, keamanan data adalah prioritas utama kami. Kami menggunakan enkripsi tingkat industri dan menyimpan data di server yang aman. Kami juga melakukan backup data secara berkala.</p>
+          </div>
+          
+          <!-- FAQ Item 4 -->
+          <div class="mb-6 border-b border-gray-200 pb-6">
+            <h3 class="text-xl font-semibold mb-2">Bisakah saya mencoba BelanjainAja sebelum berlangganan?</h3>
+            <p class="text-gray-600">Ya, kami menawarkan uji coba gratis selama 14 hari tanpa perlu kartu kredit. Anda dapat mengakses semua fitur selama periode uji coba.</p>
+          </div>
+          
+          <!-- FAQ Item 5 -->
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Apakah BelanjainAja mendukung integrasi dengan platform lain?</h3>
+            <p class="text-gray-600">Ya, BelanjainAja dapat diintegrasikan dengan berbagai platform e-commerce, aplikasi akuntansi, dan sistem pembayaran. Kami juga menyediakan API untuk integrasi kustom.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <a href="#" class="text-2xl font-bold flex items-center mb-4">
+              <i class="fas fa-shopping-cart mr-2"></i>
+              <span>BelanjainAja</span>
+            </a>
+            <p class="text-gray-400 mb-4">Solusi Point of Sale modern untuk UMKM Indonesia.</p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Produk</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Fitur</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Harga</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Integrasi</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Aplikasi Mobile</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Perusahaan</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Tentang Kami</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Karir</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Media</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Bantuan</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Pusat Bantuan</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Dokumentasi</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Status Sistem</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Komunitas</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="border-t border-gray-700 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 BelanjainAja.</p>
+            <div class="flex space-x-6">
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">Syarat & Ketentuan</a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">Kebijakan Privasi</a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">Keamanan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script>
+      // Mobile menu toggle
+      document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+      
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', function() {
+          document.getElementById('mobile-menu').classList.add('hidden');
+        });
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
