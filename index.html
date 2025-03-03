@@ -21,9 +21,9 @@
     <!-- Header -->
     <header class="bg-white shadow-sm fixed w-full z-10">
       <div
-        class="container mx-auto px-4 py-4 flex justify-between items-center"
+        class="container mx-auto px-6 lg:px-8 py-4 lg:py-2 flex justify-between items-center"
       >
-        <div class="flex items-center">
+        <div class="flex items-center py-2">
           <a href="#" class="text-2xl font-bold text-primary flex items-center">
             <img
               src="assets/logo-belanjainAja.png"
@@ -33,7 +33,7 @@
             <!-- <span>BelanjainAja</span> -->
           </a>
         </div>
-        <nav class="hidden md:flex space-x-8">
+        <nav class="hidden md:flex space-x-12">
           <a
             href="#beranda"
             class="font-medium hover:text-primary transition-colors"
@@ -55,10 +55,10 @@
             >Testimoni</a
           >
         </nav>
-        <div class="hidden md:flex items-center space-x-4">
+        <div class="hidden md:flex items-center">
           <a
             href="https://wa.me/6282116917371"
-            class="bg-primary hover:bg-primary-dark text-white font-medium py-2 px-4 rounded-lg transition-colors"
+            class="bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-lg transition-colors"
             >Daftar Gratis</a
           >
         </div>
@@ -106,55 +106,71 @@
     <!-- Hero Section -->
     <section
       id="beranda"
-      class="h-screen pt-28 pb-20 bg-gradient-to-br from-blue-50 to-white p-12"
+      class="min-h-screen pt-28 pb-20 bg-gradient-to-br from-blue-50 via-white to-blue-50"
     >
-      <div class="container mx-auto px-4 h-full">
-        <div class="flex flex-col md:flex-row items-center h-full">
-          <div class="md:w-1/2 mb-10 md:mb-0">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-              Solusi Point of Sale Modern untuk
-              <span class="text-primary">UMKM Anda</span>
-            </h1>
-            <p class="text-lg text-gray-600 mb-8">
-              Kelola bisnis Anda dengan lebih efisien. BelanjainAja membantu
-              UMKM mengelola penjualan, inventaris, dan pelanggan dalam satu
-              platform yang mudah digunakan.
-            </p>
-            <div
-              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
-            >
-              <a
-                href="https://wa.me/6282116917371"
-                class="bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-lg transition-colors text-center"
-                >Mulai Gratis 14 Hari</a
+      <div class="container">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="w-full lg:w-1/2 animate-fadeIn">
+            <div class="max-w-xl">
+              <h1
+                class="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight"
               >
-              <a
-                href="https://wa.me/6282116917371"
-                class="border border-primary text-primary hover:bg-primary hover:text-white font-medium py-3 px-6 rounded-lg transition-colors text-center"
-                >Jadwalkan Demo</a
-              >
-            </div>
-            <div class="mt-8 flex items-center">
-              <div class="flex -space-x-2">
-                <img
-                  src="/assets/store.png"
-                  class="w-10 h-10 rounded-full border-2 border-white"
-                  alt="Toko"
-                />
-              </div>
-              <p class="ml-4 text-sm text-gray-600">
-                Bergabung dengan
-                <span class="font-semibold">500+ UMKM</span> yang telah
-                menggunakan BelanjainAja
+                Solusi Point of Sale Modern untuk
+                <span class="text-primary">UMKM Anda</span>
+              </h1>
+              <p class="text-lg lg:text-xl text-gray-600 mb-8">
+                Kelola bisnis Anda dengan lebih efisien. BelanjainAja membantu
+                UMKM mengelola penjualan, inventaris, dan pelanggan dalam satu
+                platform yang mudah digunakan.
               </p>
+              <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <a
+                  href="https://wa.me/6282116917371"
+                  class="bg-primary hover:bg-primary-dark text-white font-medium py-4 px-8 rounded-lg transition-colors text-center text-lg"
+                  >Mulai Gratis 14 Hari</a
+                >
+                <a
+                  href="https://wa.me/6282116917371"
+                  class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-medium py-4 px-8 rounded-lg transition-colors text-center text-lg"
+                  >Jadwalkan Demo</a
+                >
+              </div>
+              <div class="flex items-center py-4">
+                <div class="flex -space-x-2">
+                  <img
+                    src="/assets/store.png"
+                    class="w-12 h-12 rounded-full border-2 border-white shadow-lg"
+                    alt="Toko"
+                  />
+                </div>
+                <p class="ml-4 text-gray-600">
+                  Bergabung dengan
+                  <span class="font-semibold">500+ UMKM</span> yang telah
+                  menggunakan BelanjainAja
+                </p>
+              </div>
             </div>
           </div>
-          <div class="md:w-1/2 md:pl-10">
-            <img
-              src="assets/dashboard1.png"
-              alt="BelanjainAja POS Dashboard"
-              class="rounded-lg shadow-xl w-full"
-            />
+
+          <div
+            class="w-full lg:w-1/2 animate-fadeIn"
+            style="animation-delay: 0.3s"
+          >
+            <div class="relative">
+              <div
+                class="absolute -inset-4 bg-primary/5 rounded-xl transform rotate-3"
+              ></div>
+              <img
+                src="assets/dashboard1.png"
+                alt="BelanjainAja POS Dashboard"
+                class="relative rounded-xl shadow-2xl w-full hover-scale"
+              />
+              <div
+                class="absolute -bottom-4 -right-4 bg-primary text-white px-6 py-3 rounded-lg shadow-lg text-sm font-medium hidden md:block"
+              >
+                Tampilan Modern & Intuitif
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -162,8 +178,8 @@
 
     <!-- Features Section -->
     <section id="fitur" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
+      <div class="container">
+        <div class="content-wide text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
             Fitur Unggulan BelanjainAja
           </h2>
@@ -173,101 +189,314 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Feature 1 -->
+        <div class="responsive-grid">
+          <!-- Feature Cards - Add hover-scale and feature-card classes -->
           <div
-            class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+            class="feature-card hover-scale bg-white p-8 rounded-xl shadow-sm border border-gray-100"
           >
-            <div
-              class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6"
-            >
-              <i class="fas fa-cash-register text-2xl text-primary"></i>
+            <div class="feature-card-content">
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-chart-line text-2xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Dashboard</h3>
+              <ul class="text-gray-600 space-y-2">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span
+                    >Monitoring pendapatan harian, bulanan, dan tahunan</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Grafik penjualan</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Total transaksi pembelian dan pengembalian</span>
+                </li>
+              </ul>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Kasir Digital</h3>
-            <p class="text-gray-600">
-              Proses transaksi dengan cepat dan mudah. Mendukung berbagai metode
-              pembayaran termasuk tunai, kartu, dan e-wallet.
-            </p>
           </div>
 
-          <!-- Feature 2 -->
+          <!-- Manajemen Produk -->
           <div
-            class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+            class="feature-card hover-scale bg-white p-8 rounded-xl shadow-sm border border-gray-100"
           >
-            <div
-              class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6"
-            >
-              <i class="fas fa-box text-2xl text-secondary"></i>
+            <div class="feature-card-content">
+              <div
+                class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-box text-2xl text-secondary"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Manajemen Produk</h3>
+              <ul class="text-gray-600 space-y-2">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Tambah, edit, dan hapus produk</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Fitur pencarian produk yang cepat</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Filter produk berdasarkan kategori dan harga</span>
+                </li>
+              </ul>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Manajemen Inventaris</h3>
-            <p class="text-gray-600">
-              Pantau stok barang secara real-time, atur peringatan stok minimum,
-              dan kelola pemesanan barang dengan mudah.
-            </p>
           </div>
 
-          <!-- Feature 3 -->
+          <!-- Transaksi Penjualan -->
           <div
-            class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+            class="feature-card hover-scale bg-white p-8 rounded-xl shadow-sm border border-gray-100"
           >
-            <div
-              class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6"
-            >
-              <i class="fas fa-chart-line text-2xl text-purple-600"></i>
+            <div class="feature-card-content">
+              <div
+                class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-cash-register text-2xl text-purple-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Transaksi Penjualan</h3>
+              <ul class="text-gray-600 space-y-2">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Notifikasi penjualan otomatis ke HP Admin</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Print struk transaksi</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Dukungan ID Reseller dan Member</span>
+                </li>
+              </ul>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Laporan & Analitik</h3>
-            <p class="text-gray-600">
-              Dapatkan wawasan bisnis dengan laporan penjualan, inventaris, dan
-              keuangan yang komprehensif dan mudah dipahami.
-            </p>
           </div>
 
-          <!-- Feature 4 -->
+          <!-- Manajemen Stok -->
           <div
-            class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+            class="feature-card hover-scale bg-white p-8 rounded-xl shadow-sm border border-gray-100"
           >
-            <div
-              class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6"
-            >
-              <i class="fas fa-users text-2xl text-red-500"></i>
+            <div class="feature-card-content">
+              <div
+                class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-boxes text-2xl text-red-500"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Manajemen Stok</h3>
+              <ul class="text-gray-600 space-y-2">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Notifikasi stok rendah otomatis</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Penyetokan otomatis</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Laporan stok barang</span>
+                </li>
+              </ul>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Manajemen Pelanggan</h3>
-            <p class="text-gray-600">
-              Kelola database pelanggan, program loyalitas, dan riwayat
-              pembelian untuk meningkatkan retensi pelanggan.
-            </p>
           </div>
 
-          <!-- Feature 5 -->
+          <!-- Laporan -->
           <div
-            class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+            class="feature-card hover-scale bg-white p-8 rounded-xl shadow-sm border border-gray-100"
           >
-            <div
-              class="w-14 h-14 bg-yellow-100 rounded-lg flex items-center justify-center mb-6"
-            >
-              <i class="fas fa-mobile-alt text-2xl text-yellow-500"></i>
+            <div class="feature-card-content">
+              <div
+                class="w-14 h-14 bg-yellow-100 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-file-alt text-2xl text-yellow-500"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Laporan</h3>
+              <ul class="text-gray-600 space-y-2">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Laporan penjualan dan inventaris</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Laporan transaksi harian, bulanan, tahunan</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Download laporan format Excel/PDF</span>
+                </li>
+              </ul>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Aplikasi Mobile</h3>
-            <p class="text-gray-600">
-              Akses data bisnis Anda dari mana saja dengan aplikasi mobile yang
-              tersedia untuk Android dan iOS.
-            </p>
           </div>
 
-          <!-- Feature 6 -->
+          <!-- Pengaturan Harga dan Diskon -->
           <div
-            class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+            class="feature-card hover-scale bg-white p-8 rounded-xl shadow-sm border border-gray-100"
           >
-            <div
-              class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6"
-            >
-              <i class="fas fa-plug text-2xl text-indigo-500"></i>
+            <div class="feature-card-content">
+              <div
+                class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-tags text-2xl text-indigo-500"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">
+                Pengaturan Harga & Diskon
+              </h3>
+              <ul class="text-gray-600 space-y-2">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Diskon khusus member dan reseller</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Promosi bundling produk</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Manajemen reward point</span>
+                </li>
+              </ul>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Integrasi</h3>
-            <p class="text-gray-600">
-              Integrasikan dengan platform e-commerce, akuntansi, dan aplikasi
-              bisnis lainnya untuk operasi yang lebih efisien.
-            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile App Features Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50">
+      <div class="container">
+        <div class="content-wide text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Aplikasi Mobile BelanjainAja
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Kelola bisnis Anda dari mana saja dengan aplikasi mobile yang
+            powerful
+          </p>
+        </div>
+
+        <div class="responsive-grid">
+          <!-- Mobile feature cards -->
+          <div
+            class="feature-card hover-scale bg-white p-8 rounded-xl shadow-sm border border-gray-100"
+          >
+            <div class="feature-card-content">
+              <div
+                class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-user-shield text-2xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Kontrol Admin</h3>
+              <ul class="text-gray-600 space-y-3">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Manajemen produk secara real-time</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Pemantauan pesanan langsung</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Pengelolaan data pelanggan</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Monitoring aktivitas pengguna</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Transaction Control -->
+          <div
+            class="feature-card hover-scale bg-white p-8 rounded-xl shadow-sm border border-gray-100"
+          >
+            <div class="feature-card-content">
+              <div
+                class="w-14 h-14 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-chart-bar text-2xl text-secondary"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Kontrol Transaksi</h3>
+              <ul class="text-gray-600 space-y-3">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Pantau transaksi dan laba bersih secara real-time</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Manajemen stok dan produk mobile</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Notifikasi transaksi langsung ke HP admin</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>List pesanan online dari pelanggan</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Member Features -->
+          <div
+            class="feature-card hover-scale bg-white p-8 rounded-xl shadow-sm border border-gray-100"
+          >
+            <div class="feature-card-content">
+              <div
+                class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-users text-2xl text-purple-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Fitur Member</h3>
+              <ul class="text-gray-600 space-y-3">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Notifikasi pembaruan dan promo</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Akses riwayat transaksi</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Program loyalitas pelanggan</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Business Analytics -->
+          <div
+            class="feature-card hover-scale bg-white p-8 rounded-xl shadow-sm border border-gray-100"
+          >
+            <div class="feature-card-content">
+              <div
+                class="w-14 h-14 bg-yellow-100 rounded-lg flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-chart-line text-2xl text-yellow-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Analisis Bisnis</h3>
+              <ul class="text-gray-600 space-y-3">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Grafik performa penjualan</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Rangkuman pendapatan dan laba</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                  <span>Laporan real-time di mobile</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -376,9 +605,12 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="harga" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
+    <section id="harga" class="py-20 relative overflow-hidden">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"
+      ></div>
+      <div class="container relative">
+        <div class="content-wide text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
             Paket Harga yang Fleksibel
           </h2>
@@ -388,105 +620,110 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <!-- Basic Plan -->
-          <div
-            class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow"
-          >
-            <div class="p-8">
-              <h3 class="text-xl font-semibold mb-2">Standar</h3>
-              <p class="text-gray-600 mb-6">Untuk UMKM yang baru memulai</p>
-              <div class="flex items-end mb-6">
-                <span class="text-4xl font-bold">Rp 99K</span>
-                <span class="text-gray-500 ml-2">/bulan</span>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+          <div class="feature-card hover-scale">
+            <div
+              class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden"
+            >
+              <div class="p-8">
+                <h3 class="text-xl font-semibold mb-2">Standar</h3>
+                <p class="text-gray-600 mb-6">Untuk UMKM yang baru memulai</p>
+                <div class="flex items-end mb-6">
+                  <span class="text-4xl font-bold">Rp 99K</span>
+                  <span class="text-gray-500 ml-2">/bulan</span>
+                </div>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>1 Outlet</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>2 Pengguna</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>500 Produk</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>Laporan Dasar</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>Dukungan Email</span>
+                  </li>
+                </ul>
+                <a
+                  href="https://wa.me/6282116917371"
+                  class="block text-center bg-white border border-primary text-primary hover:bg-primary hover:text-white font-medium py-3 px-6 rounded-lg transition-colors"
+                  >Pilih Paket</a
+                >
               </div>
-              <ul class="space-y-3 mb-8">
-                <li class="flex items-center">
-                  <i class="fas fa-check text-green-500 mr-2"></i>
-                  <span>1 Outlet</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="fas fa-check text-green-500 mr-2"></i>
-                  <span>2 Pengguna</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="fas fa-check text-green-500 mr-2"></i>
-                  <span>500 Produk</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="fas fa-check text-green-500 mr-2"></i>
-                  <span>Laporan Dasar</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="fas fa-check text-green-500 mr-2"></i>
-                  <span>Dukungan Email</span>
-                </li>
-              </ul>
-              <a
-                href="https://wa.me/6282116917371"
-                class="block text-center bg-white border border-primary text-primary hover:bg-primary hover:text-white font-medium py-3 px-6 rounded-lg transition-colors"
-                >Pilih Paket</a
-              >
             </div>
           </div>
 
-          <!-- Custom Plan -->
-          <div
-            class="bg-white rounded-xl shadow-lg border-2 border-primary overflow-hidden"
-          >
-            <div class="bg-primary text-white py-2 text-center font-medium">
-              <span>DENGAN KUSTOMISASI</span>
-            </div>
-            <div class="p-8">
-              <h3 class="text-xl font-semibold mb-2">Kustom</h3>
-              <p class="text-gray-600 mb-6">
-                Untuk UMKM dengan kebutuhan khusus
-              </p>
-              <div class="flex items-end mb-6">
-                <span class="text-4xl font-bold">Rp 149K</span>
-                <span class="text-gray-500 ml-2">/bulan</span>
+          <div class="feature-card hover-scale">
+            <div
+              class="bg-white rounded-xl shadow-lg border-2 border-primary overflow-hidden"
+            >
+              <div class="bg-primary text-white py-2 text-center font-medium">
+                <span>DENGAN KUSTOMISASI</span>
               </div>
-              <ul class="space-y-3 mb-8">
-                <li class="flex items-center">
-                  <i class="fas fa-check text-green-500 mr-2"></i>
-                  <span>3 Outlet</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="fas fa-check text-green-500 mr-2"></i>
-                  <span>5 Pengguna</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="fas fa-check text-green-500 mr-2"></i>
-                  <span>2000 Produk</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="fas fa-check text-green-500 mr-2"></i>
-                  <span>Laporan Lanjutan</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="fas fa-check text-green-500 mr-2"></i>
-                  <span>Dukungan Prioritas</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="fas fa-check text-green-500 mr-2"></i>
-                  <span>Kustomisasi Fitur</span>
-                </li>
-              </ul>
-              <a
-                href="https://wa.me/6282116917371"
-                class="block text-center bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-lg transition-colors"
-                >Pilih Paket</a
-              >
+              <div class="p-8">
+                <h3 class="text-xl font-semibold mb-2">Kustom</h3>
+                <p class="text-gray-600 mb-6">
+                  Untuk UMKM dengan kebutuhan khusus
+                </p>
+                <div class="flex items-end mb-6">
+                  <span class="text-4xl font-bold">Rp 149K</span>
+                  <span class="text-gray-500 ml-2">/bulan</span>
+                </div>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>3 Outlet</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>5 Pengguna</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>2000 Produk</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>Laporan Lanjutan</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>Dukungan Prioritas</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>Kustomisasi Fitur</span>
+                  </li>
+                </ul>
+                <a
+                  href="https://wa.me/6282116917371"
+                  class="block text-center bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-lg transition-colors"
+                  >Pilih Paket</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimoni" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
+    <!-- Testimonials Section -->
+    <section
+      id="testimoni"
+      class="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50"
+    >
+      <div class="container">
+        <div class="content-wide text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
             Apa Kata Pelanggan Kami
           </h2>
@@ -495,96 +732,98 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Testimonial 1 -->
-          <div
-            class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-          >
-            <div class="flex items-center mb-4">
-              <img
-                src="/assets/avatar.png"
-                alt="Testimonial"
-                class="w-12 h-12 rounded-full mr-4"
-              />
-              <div>
-                <h4 class="font-semibold">Siti Rahayu</h4>
-                <p class="text-gray-500 text-sm">Pemilik Kafe Kekinian</p>
+        <div class="responsive-grid">
+          <div class="feature-card hover-scale">
+            <div
+              class="bg-white p-8 rounded-xl shadow-sm border border-gray-100"
+            >
+              <div class="flex items-center mb-4">
+                <img
+                  src="/assets/avatar.png"
+                  alt="Testimonial"
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-semibold">Siti Rahayu</h4>
+                  <p class="text-gray-500 text-sm">Pemilik Kafe Kekinian</p>
+                </div>
               </div>
+              <div class="mb-4">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+              </div>
+              <p class="text-gray-600">
+                "BelanjainAja sangat membantu bisnis kafe saya. Sekarang saya
+                bisa melacak inventaris dan penjualan dengan mudah. Laporan yang
+                disediakan juga sangat membantu untuk menganalisis performa
+                bisnis."
+              </p>
             </div>
-            <div class="mb-4">
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-            </div>
-            <p class="text-gray-600">
-              "BelanjainAja sangat membantu bisnis kafe saya. Sekarang saya bisa
-              melacak inventaris dan penjualan dengan mudah. Laporan yang
-              disediakan juga sangat membantu untuk menganalisis performa
-              bisnis."
-            </p>
           </div>
 
-          <!-- Testimonial 2 -->
-          <div
-            class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-          >
-            <div class="flex items-center mb-4">
-              <img
-              src="/assets/avatar.png"
-                alt="Testimonial"
-                class="w-12 h-12 rounded-full mr-4"
-              />
-              <div>
-                <h4 class="font-semibold">Budi Santoso</h4>
-                <p class="text-gray-500 text-sm">Pemilik Toko Elektronik</p>
+          <div class="feature-card hover-scale">
+            <div
+              class="bg-white p-8 rounded-xl shadow-sm border border-gray-100"
+            >
+              <div class="flex items-center mb-4">
+                <img
+                  src="/assets/avatar.png"
+                  alt="Testimonial"
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-semibold">Budi Santoso</h4>
+                  <p class="text-gray-500 text-sm">Pemilik Toko Elektronik</p>
+                </div>
               </div>
+              <div class="mb-4">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+              </div>
+              <p class="text-gray-600">
+                "Sebelum menggunakan BelanjainAja, saya kesulitan mengelola stok
+                barang elektronik. Sekarang semua terorganisir dengan baik dan
+                saya mendapatkan notifikasi saat stok hampir habis. Sangat
+                direkomendasikan!"
+              </p>
             </div>
-            <div class="mb-4">
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-            </div>
-            <p class="text-gray-600">
-              "Sebelum menggunakan BelanjainAja, saya kesulitan mengelola stok
-              barang elektronik. Sekarang semua terorganisir dengan baik dan
-              saya mendapatkan notifikasi saat stok hampir habis. Sangat
-              direkomendasikan!"
-            </p>
           </div>
 
-          <!-- Testimonial 3 -->
-          <div
-            class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-          >
-            <div class="flex items-center mb-4">
-              <img
-              
-              src="/assets/avatar.png"
-                alt="Testimonial"
-                class="w-12 h-12 rounded-full mr-4"
-              />
-              <div>
-                <h4 class="font-semibold">Dewi Anggraini</h4>
-                <p class="text-gray-500 text-sm">Pemilik Butik Fashion</p>
+          <div class="feature-card hover-scale">
+            <div
+              class="bg-white p-8 rounded-xl shadow-sm border border-gray-100"
+            >
+              <div class="flex items-center mb-4">
+                <img
+                  src="/assets/avatar.png"
+                  alt="Testimonial"
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-semibold">Dewi Anggraini</h4>
+                  <p class="text-gray-500 text-sm">Pemilik Butik Fashion</p>
+                </div>
               </div>
+              <div class="mb-4">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star-half-alt text-yellow-400"></i>
+              </div>
+              <p class="text-gray-600">
+                "Integrasi dengan platform e-commerce sangat membantu bisnis
+                fashion saya. Saya bisa mengelola inventaris offline dan online
+                dalam satu sistem. Tim support juga sangat responsif saat saya
+                membutuhkan bantuan."
+              </p>
             </div>
-            <div class="mb-4">
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star-half-alt text-yellow-400"></i>
-            </div>
-            <p class="text-gray-600">
-              "Integrasi dengan platform e-commerce sangat membantu bisnis
-              fashion saya. Saya bisa mengelola inventaris offline dan online
-              dalam satu sistem. Tim support juga sangat responsif saat saya
-              membutuhkan bantuan."
-            </p>
           </div>
         </div>
       </div>
@@ -909,6 +1148,27 @@
           }
         });
       });
+
+      // Intersection Observer for animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fadeIn");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document
+        .querySelectorAll(".feature-card, section > div > div")
+        .forEach((el) => {
+          observer.observe(el);
+        });
     </script>
   </body>
 </html>
