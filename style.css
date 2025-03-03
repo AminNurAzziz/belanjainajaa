@@ -10,6 +10,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --color-primary: #0057A7;
+  --color-primary-dark: #004486;
 }
 
 html {
@@ -21,6 +23,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   color: #1F2937;
+  scroll-behavior: smooth;
 }
 
 /* Custom focus styles */
